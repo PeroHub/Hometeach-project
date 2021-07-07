@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+</head>
+<body class="container">   
+  <!-- page content before load -->
+  <div id="before-load-page"><img src="./images/homeTeachpageloader.gif" alt="HomeTeach image" class="img"></div>
+  <!-- page content before load -->
+  <div class="success-signup-box remove-message">  
+      <span class="remove-success-box-icon">&times;</span> 
+      <div class="box-1">
+          <div class="icon-title-box">
+              <img src="./images/SVG/checkbox 1success-icon.svg" alt="" class="icon">
+              <h3 class="title">Awesome.</h3>
+          </div>
+          <p class="text">Your account has been created successfully.</p>
+      </div>         
+      <div class="box-2">
+          <a href="./loginPage.html" class="success-link"><button class="success-btn">start using hometeach</button></a>
+      </div>
+  </div>
+    <section class="main">    
+        <div class="mainleft-container">
+            
+            <div class="image-container" >     
+                <div class="tops img-1">
+                    <img class="img-signup" src="./images/cuate.png" alt="">
+                </div>
+                <div class="tops img-2">
+                    <img class="img-signup" src="./images/pana2.png" alt="">
+                </div>
+                <div class="tops img-3">
+                    <img class="img-signup" src="./images/pana.png" alt="">
+                </div>
+                
+                
+            </div>
+            <div class="text-coin">
+                <h3>Learn Anywhere</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab nisi  minus vel porro!</p>
+            </div>
+            <div class="slide-coin">
+                <div class="slide-rule">
+                    <div class="slide-back-line"></div>
+                    <div class="slide-line"></div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="main-right-container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="HomeTeach"></a>
+            </div>
+            <div class="form">
+                <div class="student">
+                    <p>Sign Up as</p>
+                    <button>
+                        <select id="users" name="users">
+                            <option id="stud" value="student">Student</option>
+                            <option id="teach" value="teacher">Teacher</option>
+                        
+                        </select> 
+                    </button>
+                   
+                </div>
+                
+                
+                <form action=""> 
+                    <div class="signup">
+                        <div class="authen"><input class="signup-input" type="email" placeholder="Email Address" id="email" required>
+                            <i class="far fa-envelope"></i>
+                            </div>
+                        <span class="error-message" id="emailErr"></span>
+
+                        <div class="authen">
+                            <input class="signup-input" type="password" id="password" placeholder="Password" required>
+                            <i class="far fa-eye-slash"></i>
+                            </div>
+                            <span class="error-message" id="passwordErr"></span>
+
+                        <div class="authen">
+                            <input class="signup-input" type="password" id="password-confirm" placeholder="Confirm Password" required>
+                            <i class="far fa-eye-slash"></i>
+                        </div>
+                        <span class="error-message" id="passwordReconfirmErr"></span>  
+                        
+
+                        <button id="submit" class="sign-up">Sign Up</button>
+                        <button class="btn-already-have-account">
+                            <a href="./loginPage.html" class="link">Already have an account ?</a>
+                        </button>                        
+                        <div class="hori"><hr>or Sign Up with<hr></div>
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="social">
+                <div class="social-facebook space">
+                    <div>
+                        <img src="./images/facebook-svgrepo-com.png" alt="facebook logo">
+                    </div>
+                    
+                    <p>facebook</p>
+                </div>
+                <div class="social-google space">
+                    <div>
+                        <img src="./images/image 1.png" alt="google logo">
+                    </div>
+                    
+                    <p>Google</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <a href="#">English (UK)</a>
+        <a href="#">Hausa</a>
+        <a href="#">Português (Brasil)</a>
+        <a href="#">Français (France)</a>
+        <a href="#">Español Italiano</a>
+        <a href="#">日本語</a>
+        <a href="#">Deutsch</a>
+        <a href="#">Bahasa Indonesia</a>
+    </section>
+
+
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/signup.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+</body>
+</html>

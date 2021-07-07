@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teacher public dashboard</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/teacher-dashboard.css">
+    <!-- google linking -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+      <!-- page content before load -->
+  <div id="before-load-page"><img src="./images/homeTeachpageloader.gif" alt="HomeTeach image" class="img"></div>
+  <!-- page content before load -->
+    <!-- header start -->
+    <header class="header">
+        <div class="header__logo-box">   
+            <img src="./images/Layer x0020 1HomTeach-logo.png" alt="homeTeach-logo" class="logo">
+        </div>
+        <div class="header__drop-down-box">   
+            <input type="checkbox" id="category-check-box" class="category-check-box">
+        <label for="category-check-box" class="drop-down category-show">
+            <div class="text">Category</div>
+            <img src="./images/SVG/Path 6icon-path.svg" alt="" class="drop-down-icon">
+        </label>
+         <!-- categories box -->
+         <div class="category-box">
+            <ul class="list">
+                <li class="item item-quiz">
+                    <p class="text">Quiz</p><span class="item-arrow">&gt;</span>
+                    <div class="proper-box proper-box-quiz">
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>       
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                    </div>
+                </li>
+                <li class="item item-game">
+                    <p class="text">Games</p><span class="item-arrow">&gt;</span>
+                    <div class="proper-box proper-box-game">
+                        <a href=" https://kehinded.github.io/DICE-GAME/ " class="link">dice</a>
+                        <a href="#" class="link">puzzle</a>
+                        <a href="#" class="link">rubiscube</a>
+                        <a href="#" class="link">word domination</a>
+                    </div>
+                </li>
+                <li class="item item-eLibrary">
+                    <p class="text">eLibrary</p><span class="item-arrow">&gt;</span>
+                    <div class="proper-box proper-box-eLibrary">  
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                    </div>
+                </li>
+                <li class="item item-basic-school-subjects">
+                    <p class="text">Basic school subjects</p><span class="item-arrow" >&gt;</span>
+                    <div class="proper-box proper-box-basic-school-subjects">
+                        <a href="#" class="link">English</a>
+                        <a href="#" class="link">mathemathics</a>
+                        <a href="#" class="link">social studies</a>
+                        <a href="#" class="link">Basic science</a>
+                        <a href="#" class="link">Agriculture</a>
+                    </div>
+                </li>
+                <li class="item item-high-school-subjects">
+                    <p class="text">High school subjects</p><span class="item-arrow" >&gt;</span>
+                    <div class="proper-box proper-box-high-school-subjects">
+                        <a href="#" class="link">English</a>
+                        <a href="#" class="link">mathemathics</a>
+                        <a href="#" class="link">chemistry</a>
+                        <a href="#" class="link">social studies</a>
+                        <a href="#" class="link">Literature</a>
+                        <a href="#" class="link">Economics</a>
+                        <a href="#" class="link">physics</a>
+                        <a href="#" class="link">Biology</a>
+                    </div>
+                </li>
+                <li class="item item-marketing">
+                    <p class="text">marketing</p><span class="item-arrow" >&gt;</span>
+                     <div class="proper-box proper-box-marketing">
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                    </div>
+                </li>
+                <li class="item item-it-and-software">
+                    <p class="text">IT and software</p><span class="item-arrow" >&gt;</span>
+                     <div class="proper-box proper-box-it-and-software">
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                    </div>
+                </li>
+                <li class="item item-Languages">
+                    <p class="text">Languages</p><span class="item-arrow" >&gt;</span>
+                     <div class="proper-box proper-box-Languages">
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                    </div>
+                </li>
+                <li class="item item-Arts-and-culture">
+                    <p class="text">Arts and culture</p><span class="item-arrow" >&gt;</span>
+                     <div class="proper-box proper-box-Arts-and-culture">
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>  
+                        <a href="#" class="link"></a>
+                        <a href="#" class="link"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- categories box end -->
+        </div>
+        <!-- end of drop down  -->
+        <div class="header__search-box">
+            <input type="text" class="search-input">
+            <img src="./images/searchicon-search.svg" alt="" class="search-icon">
+        </div>
+        <!-- icon box for header start -->
+        <div class="header__icon-box">
+           <!-- teach on hometeach -->
+           <a href="#" class="header-teach-link">Teach on HomeTeach</a>
+           <!-- my courses -->
+           <div class="my-course-drop-down">
+               <p class="text">My Courses</p>   
+           </div>
+            <div class="notification-show">
+                <img src="./images/bell 1bell-icon-1.svg" alt="" class="header-icon">
+                <div class="notification-box">
+                    <p class="text notification-text">You currently have no notification</p>
+                    <ul class="notification-list">
+                        <li class="notification-item"></li>    
+                    </ul>
+                </div>
+            </div>
+            <figure class="header-img-box">  
+               <div class="user-name">jw</div>     
+            </figure>
+        </div>
+        <!-- arrow box part -->
+        <div class="arrow-box">
+            <span class="arrow-left">&larr;</span>
+            <span class="arrow-right">&rarr;</span>   
+        </div>
+    </header>  
+    <!-- header end -->
+    <!--main section start -->
+    <section class="main-section">
+        <div class="sidebar-box translateX-2">
+            <div class="user-name-box">
+                <h3 class="user-name">jw</h3>
+            </div>
+            <h2 class="user-name-proper">jack will</h2>
+            <ul class="sidebar-list">
+                <a href="" class="sidebar-link ">
+                    <li class="sidebar-item sidebar-active-link">public profile</li>
+                </a>
+                <a href="./teacher-private-profile.html" class="sidebar-link">
+                    <li class="sidebar-item">private profile</li>
+                </a>
+                <a href="./teacher-picture-profile.html" class="sidebar-link">
+                    <li class="sidebar-item">profile picture</li>
+                </a>
+                <a href="./teacher-course-profile.html" class="sidebar-link">
+                    <li class="sidebar-item">courses</li>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <li class="sidebar-item">q and a</li>
+                </a>
+                <a href="#" class="sidebar-link">  
+                    <li class="sidebar-item">reviews</li>
+                </a>
+                <a href="./teacher-account-set.html" class="sidebar-link">
+                    <li class="sidebar-item">account settings</li>
+                </a>
+            </ul>
+        </div>
+        <!-- end of sidebar -->
+        <div class="main-content-box">
+            <div class="heading-box">
+                <h2 class="title">profile</h2>
+                <p class="text">Add information about yourself</p>
+            </div>
+            <!-- end of title -->
+            <div class="actual-content">
+                <div class="public-profile-content">
+                    <form action="#" class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="first name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="last name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="date of birth">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="bio" name="" id="" cols="30" rows="10" class="form-input"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="field">
+                        </div>
+                        <div class="form-group">
+                          <select name="" id="" class="form-input">
+                              <option value="" class="option">english(US)</option>
+                              <option value="" class="option">french</option>
+                              <option value="" class="option">yoruba</option>
+                          </select>
+                        </div> 
+                    </form> 
+                    <button class="save-btn">save</button>    
+                </div>
+            </div>
+            <!-- end of actual content -->
+        </div>   
+    </section>
+    <!-- main section end -->
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="logo-nav-box">
+            <div class="logo-box"><img class="logo" src="./images/Layer x0020 1profile-footer-logo.png" alt="homeTeach-logo"></div>
+            <!-- list nav start -->
+            <ul class="footer-list">  
+                <li class="footer-item"><a href="#" class="footer-link">Get the app</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">About us</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Contact us</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Terms</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Privacy policy</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Help and Support</a></li>
+            </ul>
+        </div>
+        <p class="footer-text">English (UK)
+            Hausa
+           Português (Brasil)
+           Français (France)   
+         Español
+          Italiano
+          日本語
+           Deutsch
+            Bahasa Indonesia   
+        हिन्दी
+        </p>  
+    </footer>
+    <!-- footer end -->
+    <script src="./js/teacher-public-pro.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    --border-color: #c4c4c4;
+    --green-color: #3e8a23;
+    --red-color: #d2492f;
+    --blue-color: #4688b0;
+    --gold-color: #c09728;
+    --para-color: #818181;
+    --header-color: #000;
+    --bg-color: #fff;
+}
+#before-load-page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    left: 0%;
+    background-color: #fff; }
+    #before-load-page .img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%; }
+      @media only screen and (max-width: 37.5em) {
+        #before-load-page .img {
+          width: 150%; } }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: var(--para-color);
+    background-color: var(--bg-color);
+    overflow: hidden;  
+}
+h1 {
+    font-size: 24px;
+    color: var(--header-color);
+    text-transform: capitalize;
+}
+.far {
+    color: var(--para-color);
+    font-size: 17px;
+    cursor: pointer;
+}
+i {
+    padding: 0px;
+    width: 15%;
+}
+
+/***************    HEADER SECTION      *********************/
+header {
+    width: 100%;
+    height: 50px;
+}
+
+/**************     MAIN SECTION    ***********************/
+main {
+    margin: 30px 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/************   Login Intro Section     **********************/
+main .loginIntroSection {
+    text-align: center;
+    width: 400px;
+    margin: 0px 10px;
+}
+.loginIntroImg {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+.loginIntroImg img {
+    position: absolute;
+    left: 0px;
+    display: inline-block;
+    width: 100%;
+    animation: imageSlider 30s linear infinite both;
+}
+.loginIntroImg .firstImg {
+    animation-delay: 0s;
+}
+.loginIntroImg .secondImg {
+    left: 100%;
+    animation-delay: 10s;
+}
+.loginIntroImg .thirdImg {
+    left: 200%;
+    animation-delay: 20s;
+}
+/**************     Login Slider    ****************/
+.loginIntroSlider {
+    width: 60%;
+    margin: 10px auto;
+    height: 7px;
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--border-color);
+}
+.loginIntroSlider .slider {
+    height: 100%;
+}
+.slider img {
+    height: 100%;
+    width: 33%;
+    position: absolute;
+    top: 0px;
+    border-radius: inherit;
+    animation: moveSlide 30s linear infinite both;
+}
+.slider img:nth-child(1) {
+    left: 0px;
+    animation-delay: 0s;
+}
+.slider img:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 10s;
+}
+.slider img:nth-child(3) {
+    right: 0px;
+    animation-delay: 20s;
+}
+/***********    Login form      **********************/
+.loginFormSection {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    margin: 0px 10px;
+}
+.loginFormSection button {
+    margin: 10px auto;
+    background-color: var(--red-color);
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    cursor: pointer;
+}
+.loginFormSection button a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+.loginFormSection form {
+    border-bottom: thin solid var(--border-color);
+    margin-bottom: 10px;
+}
+.loginFormSection form img {
+    width: 180px;
+    margin: 20px 0px;
+}
+.userRole select {
+    color: var(--para-color);
+    border: thin solid var(--border-color);
+    padding: 7px 5px;
+    margin: 10px;
+    border-radius: 7px;
+    width: 130px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+/* login link style */
+
+
+.login-link {
+    padding: .7rem;
+    width: 85%;
+    margin: 0rem auto;
+    background-color: var(--green-color);
+    opacity: .9;
+    border-radius: .5em;
+    color: #fff;
+    text-transform: capitalize;font-size: .9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.login-link:hover{
+    transform: translateY(-.15rem);
+    background-color: var(--green-color); 
+    opacity: 1;  
+}
+
+.userEmail,
+.userPassword
+{
+    width: 300px;
+    padding: 0px;
+    border: thin solid var(--border-color);
+    border-radius: 10px;
+    box-sizing: inherit;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+}
+.userEmail input,
+.userPassword input
+{
+    outline: none;
+    color: var(--para-color);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding-left: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 40px;
+    
+}
+
+
+form > input {
+    width: 300px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: var(--green-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+form > a {
+    margin: 10px 0px;
+    text-decoration: none;
+    color: var(--blue-color);
+    display: block;
+}
+
+/* create a new account style */
+
+.create-new-account{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*****************     FOOTER SECTION      ***************/
+footer {
+    margin: 0px;
+    text-align: center;
+    padding: 10px 0px;
+}
+footer span {
+    cursor: pointer;
+    margin: 0px 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/*******************    MEDIA QUERRY    **********************/
+@media screen and (max-width: 760) {
+    
+}
+
+
+/***************       ANIMATION KEYFRAMES      ********************/
+@keyframes imageSlider {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        left: 0%;
+    }
+    25% {
+        opacity: 1;
+        left: 0%;
+    }
+    40% {
+        opacity: 0;
+        left: -100%;
+    }
+    50% {
+        opacity: 0;
+        left: -100%;
+    }
+    70% { left: 0%; }
+    100% {
+        opacity: 0;
+        left: 100%;
+    }
+}
+@keyframes moveSlide {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    25% { opacity: 1; }
+    40% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
